@@ -21,6 +21,7 @@ body {
 
 #exitBtn {
     position: absolute;
+    cursor: pointer;
     top: 5%;
     right: 7%;
     width: 3vw;
@@ -63,6 +64,7 @@ body {
 
 .btn {
     height: 15vh;
+    cursor: pointer;
 }
 
 .milky-count-end {
