@@ -1,0 +1,236 @@
+#game {
+    width: 60vw;
+    height: 40vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-image: url(assets/media/image.png);
+    background-size: 100% 100%;
+    transform: translate(50%, -50%);
+}
+
+body {
+    overflow: hidden;
+}
+
+#body {
+    background-image: url(assets/media/background-gav-yam.png);
+    background-size: 100vw 100vh;
+}
+
+#exitBtn {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    width: 3vw;
+}
+
+
+#restartBtn {
+    position: absolute;
+    bottom: 3%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#startBtn {
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+}
+
+#instructionsBtn {
+    position: absolute;
+    bottom: 4.5%;
+    left: 20%;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.text {
+    font-size: 4vmax;
+    z-index: 2;
+    position: absolute;
+    right: 50%;
+}
+
+.btn {
+    height: 15vh;
+}
+
+.milky-count-end {
+    top: 38%;
+}
+
+.highest-score-end {
+    top: 59%;
+}
+
+#newScore {
+    position: absolute;
+    bottom: 22%;
+    right: 50%;
+    transform: translateX(50%);
+    height: 8vh;
+}
+
+#mplQueen {
+    position: absolute;
+    bottom: 2vh;
+    left: 0vw;
+}
+
+.character {
+    bottom: 3vh;
+    height: 40vh;
+}
+
+.milky {
+    height: 10vh;
+    bottom: 5vh;
+}
+
+.tray {
+    height: 10vh;
+    bottom: 28vh;
+}
+
+.jump {
+    animation: jump 800ms;
+    -webkit-animation: jump 800ms;
+}
+
+.obstacle {
+    position: absolute;
+    right: 0vw;
+    display: none;
+}
+
+.heart {
+    width: 7vw;
+}
+
+.count-img {
+    height: 8vh;
+    margin-right: 2vw;
+}
+
+#lifeCount {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.milky-count {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    font-size: 4vmax;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.animation {
+    animation: block 2s linear;
+    -webkit-animation: block 2s linear;
+}
+
+.background-move {
+    animation: move 12s linear;
+    -webkit-animation: move 12s linear;
+}
+
+@keyframes block {
+    0% {
+        right: 0vw;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+
+@-webkit-keyframes block {
+    0% {
+        right: 0vw;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 5vh;
+    }
+    30% {
+        bottom: 25vh;
+    }
+    70%{
+        bottom: 25vh;
+    }
+    100% {
+        bottom: 5vh;
+    }
+}
+
+@-webkit-keyframes jump {
+    0% {
+        bottom: 5vh;
+    }
+    30% {
+        bottom: 25vh;
+    }
+    70%{
+        bottom: 25vh;
+    }
+    100% {
+        bottom: 5vh;
+    }
+}
+
+
+@keyframes move {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 300vw;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 300vw;
+    }
+}
+
+@keyframes move-first {
+    0% {
+        left: 0vw;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+@-webkit-keyframes move-fisrt {
+    0% {
+        left: 0vw;
+    }
+    100% {
+        left: -300.5vw;
+    }
+}
+
+
